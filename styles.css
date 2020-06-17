@@ -41,6 +41,73 @@ header .header-wrapper {
 
 .navbar .mobile-nav .icon {
     font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.header-wrapper .mobile-nav-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f1f0f0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .3s;
+}
+
+.header-wrapper .mobile-nav-content > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-wrapper .mobile-nav-content > nav a {
+    padding-bottom: 1em;
+    font-size: 1.8rem;
+    color: #1D3557;
+    text-decoration: none;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.header-wrapper .mobile-nav-content > nav:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.header-wrapper .mobile-nav-content > nav:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.header-wrapper .mobile-nav-content > nav:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.header-wrapper .mobile-nav-content > nav:nth-child(4) {
+    transition-delay: 0.8;
+}
+
+.header-wrapper .mobile-nav-content > nav:nth-child(5) {
+    transition-delay: 0;
+}
+
+.header-wrapper .mobile-nav-content > nav a:hover, nav a:focus {
+    text-decoration: underline;
+    text-decoration-color: #1D3557;
+}
+
+#close {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 2.1rem;
 }
 
 .showcase {
@@ -60,6 +127,9 @@ header .header-wrapper {
 .header-wrapper .showcase h1 {
     font-size: 2rem;
     margin-bottom: 1em;
+    transform: translateY(60%);
+    opacity: 0;
+    transition: 0.8s;
     
 }
 
@@ -68,6 +138,9 @@ header .header-wrapper {
     text-align: justify;
     line-height: 1.5;
     margin: 0;
+    transform: translateY(60%);
+    opacity: 0;
+    transition: 1s;
 }
 
 .header-wrapper .showcase a {
@@ -84,8 +157,9 @@ header .header-wrapper {
     margin-top: 2em;
     font-weight: 600;
     border-radius: 40px;
-    transition: transform 0.5s ease-out;
-    transform: translateX(-2em);
+    transform: translateY(60%);
+    opacity: 0;
+    transition: 1.2s;
 }
 
 .header-wrapper .showcase a:hover {
@@ -573,6 +647,9 @@ footer .copyright {
 
     .showcase-img {
         width: 400px;
+        transform: translateX(50%);
+        opacity: 0;
+        transition: 1.5s;
     }
 
     .get-started-container {
