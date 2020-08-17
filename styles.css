@@ -154,6 +154,7 @@ header .header-wrapper {
 }
 
 .why-facile-wrapper {
+    padding-top: 1em;
     background: #f1f0f0;
     color: #1D3557;
     display: flex;
