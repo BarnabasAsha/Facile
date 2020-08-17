@@ -4,10 +4,10 @@
 }
 
 body {
-    margin: auto;
     font-family: sans-serif;
     width: 100vw !important;
     background-color: #f1f0f0;
+    overflow-x: hidden;
 }
 
 
