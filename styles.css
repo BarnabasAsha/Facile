@@ -1,19 +1,14 @@
 * {
     box-sizing: border-box;
     font-size: 15px;
+    margin: 0;
+    padding: 0
 }
 
 body {
     font-family: sans-serif;
-    width: 100%;
     background-color: #f1f0f0;
-    overflow-x: hidden;
 }
-
-header, section {
-    width: 100%;
-}
-
 
 header .header-wrapper {
     background: linear-gradient(#A8DADC, #56cbcf);
@@ -289,6 +284,7 @@ header .header-wrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 3em;
 }
 
 .testimonies-wrapper .flexbox .box {
@@ -305,6 +301,7 @@ header .header-wrapper {
     width: 100px;
     height: 20px;
     overflow: hidden;
+    margin-bottom: 1em;
 }
 
 .box-logo img {
@@ -458,7 +455,6 @@ footer .copyright {
 @media only screen and (min-width: 760px) {
     header .header-wrapper {
         height: 60vh;
-        position: relative;
         border-bottom-right-radius: 200px;
         border-bottom-left-radius: 100px;
     }
@@ -540,12 +536,11 @@ footer .copyright {
 
     .why-facile-wrapper {
         margin: 2em auto;
-        width: 100%;
         padding: 0 2em;
     }
 
     .why-facile-wrapper img {
-        width: 500px;
+        width: 460px;
     }
 
     .facile-container .card {
@@ -557,10 +552,6 @@ footer .copyright {
 
     .facile-container .card h3 {
         font-size: 1.7rem;
-    }
-
-    .partner-wrapper {
-        width: 100%;
     }
 
     .partner-wrapper h2 {
@@ -577,7 +568,6 @@ footer .copyright {
 
     .get-started-wrapper{
         padding: 3em;
-        width: 100%;
     }
 
     .get-started-container {
@@ -588,15 +578,15 @@ footer .copyright {
         margin: 0 auto;
     }
 
+    .get-started-container .steps {
+        margin-right: 3em;
+    }
+
     .partner-wrapper .flexbox {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-
-    .testimonies-wrapper {
-        width: 100%;
     }
 
     .testimonies-wrapper h2 {
@@ -605,7 +595,6 @@ footer .copyright {
 
     .testimonies-wrapper .flexbox {
         display: grid;
-        width: 100%;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
         justify-items: center;
@@ -664,16 +653,9 @@ footer .copyright {
         height: 80vh;
         padding: 2em 5em;
     }
-
-    body {
-        width: 100%;
-    }
 }
 
 @media only screen and (min-width: 960px) {
-    body {
-        width: 100%;
-    }
 
     .showcase-img {
         width: 400px;
