@@ -30,21 +30,3 @@ function navContentsShow () {
 }
 
 // Showcase
-window.onload = function() {
-    const h = document.querySelector('.showcase h1')
-    const p = document.querySelector('.showcase p')
-    const b = document.querySelector('.showcase a')
-    const i = document.querySelector('.showcase-img')
-
-    p.style.opacity = '1';
-    p.style.transform = 'translate(0)';
-    
-    h.style.opacity = '1';
-    h.style.transform = 'translate(0)';
-    
-    b.style.opacity = '1';
-    b.style.transform = 'translate(0)';
-
-    i.style.opacity = '1';
-    i.style.transform = 'translate(0)';
-}

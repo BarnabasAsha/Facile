@@ -129,10 +129,6 @@ header .header-wrapper {
 .header-wrapper .showcase h1 {
     font-size: 2rem;
     margin-bottom: 1em;
-    transform: translateY(60%);
-    opacity: 0;
-    transition: 0.8s;
-    
 }
 
 .header-wrapper .showcase p {
@@ -140,9 +136,6 @@ header .header-wrapper {
     text-align: justify;
     line-height: 1.5;
     margin: 0;
-    transform: translateY(60%);
-    opacity: 0;
-    transition: 1s;
 }
 
 .header-wrapper .showcase a {
@@ -159,9 +152,6 @@ header .header-wrapper {
     margin-top: 2em;
     font-weight: 600;
     border-radius: 40px;
-    transform: translateY(60%);
-    opacity: 0;
-    transition: 1.2s;
 }
 
 .header-wrapper .showcase a:hover {
@@ -687,9 +677,6 @@ footer .copyright {
 
     .showcase-img {
         width: 400px;
-        transform: translateX(50%);
-        opacity: 0;
-        transition: 1.5s;
     }
 
     .testimonies-wrapper .flexbox {
