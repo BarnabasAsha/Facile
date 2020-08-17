@@ -7,7 +7,7 @@ body {
     margin: auto;
     font-family: sans-serif;
     width: 100%;
-    background-color: #f1f0f0;;
+    background-color: #f1f0f0;
 }
 
 
@@ -19,7 +19,7 @@ header .header-wrapper {
     padding: 1em;
     border-bottom-right-radius: 200px;
     border-bottom-left-radius: 100px;
-    
+    width: 100%;
 }
 
 .header-wrapper .navbar {
@@ -285,18 +285,27 @@ header .header-wrapper {
     background: #A8DADC;
     color: #1D3557;
     padding: 2em 1em;
+    width: 100%;
 }
 
 .testimonies-wrapper h2 {
     font-size: 1.5rem;
 }
 
+.testimonies-wrapper .flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .testimonies-wrapper .flexbox .box {
     background: #f1f0f0;
     padding: 2em;
     border-radius: 5px;
-    margin: 1em 3em;
     opacity: 0.8;
+    margin-bottom: 1em;
+    width: 250px;
 }
 
 .box-logo {
@@ -313,7 +322,7 @@ header .header-wrapper {
 
 .profile {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 5em;
 }
@@ -451,10 +460,14 @@ footer .copyright {
 @media only screen and (min-width: 400px) {
     header .header-wrapper {
         height: 60vh;
+        width: 100%;
     }
 }
 
 @media only screen and (min-width: 760px) {
+    header {
+        width: 100%;
+    }
     header .header-wrapper {
         height: 60vh;
         position: relative;
@@ -501,6 +514,12 @@ footer .copyright {
         text-decoration: underline;
     }
 
+    .showcase-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .showcase {
         text-align: left;
         width: 50%;
@@ -524,9 +543,6 @@ footer .copyright {
         width: 300px;
         height: 300px;
         display: block;
-        position: absolute;
-        top: 20%;
-        right: 50px;
     }
 
     .showcase-img img {
@@ -555,6 +571,10 @@ footer .copyright {
         font-size: 1.7rem;
     }
 
+    .partner-wrapper {
+        width: 100%;
+    }
+
     .partner-wrapper h2 {
         font-size: 2rem;
         margin-right: 2em;
@@ -570,6 +590,7 @@ footer .copyright {
 
     .get-started-wrapper{
         padding: 3em;
+        width: 100%;
     }
 
     .get-started-container {
@@ -591,15 +612,26 @@ footer .copyright {
         align-items: center;
     }
 
+    .testimonies-wrapper {
+        width: 100%;
+    }
+
     .testimonies-wrapper h2 {
         font-size: 2rem;
     }
 
     .testimonies-wrapper .flexbox {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .testimonies-wrapper .flexbox .box {
+        width: 220px;
+        height: 300px;
     }
 
     .subscribe-form h2 {
@@ -650,6 +682,11 @@ footer .copyright {
         transform: translateX(50%);
         opacity: 0;
         transition: 1.5s;
+    }
+
+    .testimonies-wrapper .flexbox {
+        width: 80%;
+        margin: auto;
     }
 
     .get-started-container {
