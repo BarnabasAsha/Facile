@@ -666,15 +666,30 @@ footer .copyright {
 
     .footer-container h3 {
         font-size: 1.5rem;
-    }
-    
+    }   
 }
 
 @media only screen and (min-width: 960px) {
+    header .header-wrapper {
+        height: 60vh;
+        padding: 2em 5em;
+    }
+}
 
+@media only screen and (min-width: 1200px) {
     header .header-wrapper {
         height: 80vh;
         padding: 2em 5em;
+    }
+
+    body {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    body {
+        width: 100%;
     }
 
     .showcase-img {
@@ -697,3 +712,5 @@ footer .copyright {
         margin: 0;
     }
 }
+
+
