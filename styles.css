@@ -10,6 +10,9 @@ body {
     overflow-x: hidden;
 }
 
+header, section {
+    width: 100%;
+}
 
 
 header .header-wrapper {
@@ -19,7 +22,6 @@ header .header-wrapper {
     padding: 1em;
     border-bottom-right-radius: 200px;
     border-bottom-left-radius: 100px;
-    width: 100%;
 }
 
 .header-wrapper .navbar {
@@ -460,14 +462,10 @@ footer .copyright {
 @media only screen and (min-width: 400px) {
     header .header-wrapper {
         height: 60vh;
-        width: 100%;
     }
 }
 
 @media only screen and (min-width: 760px) {
-    header {
-        width: 100%;
-    }
     header .header-wrapper {
         height: 60vh;
         position: relative;
@@ -523,7 +521,7 @@ footer .copyright {
     .showcase {
         text-align: left;
         width: 50%;
-        margin: 5em;
+        margin: 5em 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -557,7 +555,7 @@ footer .copyright {
     }
 
     .why-facile-wrapper img {
-        width: 30em;
+        width: 500px;
     }
 
     .facile-container .card {
@@ -577,7 +575,6 @@ footer .copyright {
 
     .partner-wrapper h2 {
         font-size: 2rem;
-        margin-right: 2em;
     }
 
     .partner-wrapper h2 span {
@@ -599,10 +596,6 @@ footer .copyright {
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-    }
-
-    .get-started-container .steps {
-        
     }
 
     .partner-wrapper .flexbox {
