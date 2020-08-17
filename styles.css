@@ -5,7 +5,7 @@
 
 body {
     font-family: sans-serif;
-    width: 100vw !important;
+    width: 100%;
     background-color: #f1f0f0;
     overflow-x: hidden;
 }
@@ -602,7 +602,7 @@ footer .copyright {
     }
 
     .get-started-container .steps {
-        margin-right: 2em;
+        
     }
 
     .partner-wrapper .flexbox {
